@@ -58,7 +58,7 @@ public class Ecrit{
 		int i=1;
 		boolean vf=false;
 		String rep ="Oui",rep2 ="Oui";
-		System.out.println("-------------------Ce programme sert a la copie ou au deplacement de fichier grace à leurs chemin------------------------");
+		System.out.println("-------------------Ce programme sert a la copie ou au deplacement de fichier grace à leurs chemins------------------------");
 		Thread.sleep(200);
 		
 		Scanner sc = new Scanner(System.in);
