@@ -58,7 +58,7 @@ public class Ecrit{
 		int i=1;
 		boolean vf=false;
 		String rep ="Oui",rep2 ="Oui";
-		System.out.println("-------------------Ce programme sert a la copie ou au deplacement de fichier grace à leurs adresse------------------------");
+		System.out.println("-------------------Ce programme sert a la copie ou au deplacement de fichier grace ï¿½ leurs adresse------------------------");
 		Thread.sleep(200);
 		
 		Scanner sc = new Scanner(System.in);
@@ -86,13 +86,13 @@ public class Ecrit{
 				}
 			
 			if(rep.equals("Oui") || rep.equals("oui")){
-			System.out.println("Souhaitez-vous:\n0.Copier le fichier cible\n1.Deplacer le fichier cible\nRépondre par [0/1] ");
+			System.out.println("Souhaitez-vous:\n0.Copier le fichier cible\n1.Deplacer le fichier cible\nRï¿½pondre par [0/1] ");
 			try{
 				choix = cc.nextInt();
 			}catch(InputMismatchException e)
 			{
 				 i =0;
-				System.out.println("Tu n'as pas rentré de nombre !");
+				System.out.println("Tu n'as pas rentrï¿½ de nombre !");
 				System.out.println("Progam failed");
 				System.out.println("Sortie du programme code d'erreur :"+e.getMessage());
 				rep = "non";
@@ -119,7 +119,7 @@ public class Ecrit{
 				sc2 =new Scanner(System.in);
 			System.out.println("\n------------------------------------------------------------------");
 			System.out.println("------------------------------------------------------------------");
-			System.out.println("Saisissez le chemin complet du fichier à copier :");
+			System.out.println("Saisissez le chemin complet du fichier ï¿½ copier :");
 			
 			
 				fich = sc.nextLine();
@@ -145,7 +145,7 @@ public class Ecrit{
 				
 				if(tf == true)
 				{
-					System.out.println("\nLe fichier que vous voulez créer existe déjà,voulez vous l'écraser ou écrire à la suite ? :\n-Effacer\n-Copier");
+					System.out.println("\nLe fichier que vous voulez crï¿½er existe dï¿½jï¿½,voulez vous l'ï¿½craser ou ï¿½crire ï¿½ la suite ? :\n-Effacer\n-Copier");
 					String ec = sc.next();
 						if(ec.equals("Copier") || ec.equals("copier"))
 						{
@@ -193,7 +193,7 @@ public class Ecrit{
 					{
 						
 						r++;
-						System.out.println("Copie terminée à :"+pour+"%");
+						System.out.println("Copie terminï¿½e ï¿½ :"+pour+"%");
 						
 						
 					}
@@ -210,7 +210,7 @@ public class Ecrit{
 					if(rep2.equals("Non") || rep2.equals("non"))
 					{
 						System.out.println("------------------------------------------------------------------------");
-						System.out.println("Copie terminé");
+						System.out.println("Copie terminï¿½");
 						
 					}
 					else if(rep2.equals("Oui") || rep2.equals("oui"))
@@ -226,7 +226,7 @@ public class Ecrit{
 						if(rep2.equals("Non") || rep2.equals("non"))
 						{
 							System.out.println("------------------------------------------------------------------------");
-							System.out.println("Copie terminé");
+							System.out.println("Copie terminï¿½");
 						}
 					}
 				
@@ -271,12 +271,12 @@ public class Ecrit{
 					sc2 =new Scanner(System.in);
 					System.out.println("\n------------------------------------------------------------------");
 					System.out.println("------------------------------------------------------------------");
-				System.out.println("Saisissez le chemin complet du fichier à déplacer\n!*Attention si ce fichier existe déjà il sera écraser automatiqument*! :");
+				System.out.println("Saisissez le chemin complet du fichier ï¿½ dï¿½placer\n!*Attention si ce fichier existe dï¿½jï¿½ il sera ï¿½craser automatiqument*! :");
 				
 				fic = sc.nextLine();
 				fic = fic.replaceAll("\"","");
 					
-				System.out.println("\nSaisissez le nom du fichier déplacé :");
+				System.out.println("\nSaisissez le nom du fichier dï¿½placï¿½ :");
 				String co = sc.next();
 				long sT = System.nanoTime();
 				System.out.println("\nDeplacement en cours...\n");
@@ -297,13 +297,13 @@ public class Ecrit{
 					Files.move(source, cible,StandardCopyOption.REPLACE_EXISTING);
 					long eT = System.nanoTime();
 					System.out.println("Temps du deplacement du fichier : "+Chrono(sT,eT)+ ".");
-					System.out.println("Deplacement terminé");
-					System.out.println("Voulez-vous de nouveau déplacer un fichier ?\n-Oui\t-Non");
+					System.out.println("Deplacement terminï¿½");
+					System.out.println("Voulez-vous de nouveau dï¿½placer un fichier ?\n-Oui\t-Non");
 					rep2= sc.next();
 					if(rep2.equals("Non") || rep2.equals("non"))
 					{
 						System.out.println("------------------------------------------------------------------------");
-						System.out.println("Déplacement terminé");
+						System.out.println("Dï¿½placement terminï¿½");
 						
 					}
 					else if(rep2.equals("Oui") || rep2.equals("oui"))
@@ -319,7 +319,7 @@ public class Ecrit{
 						if(rep2.equals("Non") || rep2.equals("non"))
 						{
 							System.out.println("------------------------------------------------------------------------");
-							System.out.println("Déplacement terminé");
+							System.out.println("Dï¿½placement terminï¿½");
 						}
 					}
 				
@@ -346,7 +346,7 @@ public class Ecrit{
 		}
 		System.out.println("------------------------------------------------------------------");
 		System.out.println("------------------------------------------------------------------");
-		System.out.println("Fin du programme\nJohanCorp");
+		System.out.println("Fin du programme");
 		}
 			
 
